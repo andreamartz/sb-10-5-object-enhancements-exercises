@@ -29,7 +29,7 @@ var instructor = {
 
 instructor[favoriteNumber] = "That is my favorite!";
 
-// Computed Property Names ES2015
+// Computed Property Names ES2015 (my task)
 const favoriteNumber2 = 42;
 
 const instructor2 = {
@@ -37,3 +37,30 @@ const instructor2 = {
   [favoriteNumber2]: "That is my favorite!",
 };
 // console.log("instructor2 - 1st run: ", instructor2);
+
+// **********************************************************
+// Object Methods (GIVEN)
+var instructor = {
+  firstName: "Colt",
+  sayHi: function () {
+    return "Hi!";
+  },
+  sayBye: function () {
+    return this.firstName + " says bye!";
+  },
+};
+
+console.log(instructor);
+
+// Object Methods ES2015 (my task)
+const instructor3 = {
+  firstName: "Colt",
+  sayHi() {
+    return "Hi!";
+  },
+  sayBye() {
+    return this.firstName + " says bye!";
+  },
+};
+
+console.log(instructor3);
